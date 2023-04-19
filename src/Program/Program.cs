@@ -6,7 +6,15 @@ namespace PII_Game_Of_Life
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            ImportadorArchivo importador = new ImportadorArchivo("ruta_del_archivo.txt");
+
+            
+            Tablero tablero = new Tablero(importador);
+
+            
+            Console.ReadKey();
         }
     }
 }
+
